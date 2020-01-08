@@ -1,0 +1,25 @@
+/* Fonts */
+
+$serif-stack: Georgia, serif;
+$sans-serif-stack: Grotesk, sans-serif;
+$sans-serif-narrow-stack: GroteskNarrow, sans-serif;
+
+
+/* Colors */
+
+$background-primary-color: #fff;
+$black: #000;
+$blue: #0086be;
+$light-gray: #b1b1b1;
+$light-text: #707070;
+$medium-gray: #404040;
+$text-black: #111;
+
+
+/* Wrapper */
+$wrapperMaxWidth: 600px;
+
+
+$sm: 768px;
+$md: 992px;
+$lg: 1180px;

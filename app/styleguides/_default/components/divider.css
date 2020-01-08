@@ -1,0 +1,7 @@
+$divider_color: #767676;
+
+.divider {
+  border-top: 1px solid $divider_color;
+  margin: 0 0 20px;
+  width: 100%;
+}
