@@ -97,6 +97,10 @@ _components:
         componentVariation: header
         mobileCTA: Support Us
         mobileCTALink: 'https://www.google.com'
+  vulture-section:
+    instances:
+      claydemo:
+        componentVariation: header
   footer:
     instances:
       claydemo:

@@ -11,6 +11,8 @@ _layouts:
         top:
           -
             _ref: /_components/header/instances/claydemo
+          -
+            _ref: /_components/vulture-section/instances/claydemo
         main: main
         bottom:
           -
@@ -30,6 +32,8 @@ _layouts:
         top:
           -
             _ref: /_components/header/instances/claydemo
+          -
+            _ref: /_components/vulture-section/instances/claydemo
         main: main
         bottom:
           -

@@ -12,6 +12,7 @@ head:
       - meta-keywords
       - meta-authors
       - meta-image
+      - paragraph
 
 headLayout:
   _componentList:

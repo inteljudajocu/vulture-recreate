@@ -1,0 +1,26 @@
+.vulture-section {
+  display: flex;
+  justify-content: center;
+}
+
+.vulture-section-title {
+  padding-right: 15vh;
+}
+
+.vulture-section-title > h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.vulture-section-buttons {
+  display: flex;
+  flex-flow: nowrap;
+  padding-left: 10vh;
+}
+
+.vulture-section-buttons > button {
+  border: none;
+  height: fit-content;
+  align-self: center;
+  font-size: inherit;
+}

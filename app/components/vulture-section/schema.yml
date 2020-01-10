@@ -1,0 +1,10 @@
+link:
+  _has:
+    input: text
+    type: url
+
+
+_groups:
+  settings:
+    fields:
+      - link
