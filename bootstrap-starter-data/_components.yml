@@ -105,6 +105,10 @@ _components:
     instances:
       claydemo:
         componentVariation: magazineSection
+  social-media:
+    instances:
+      claydemo:
+        componentVariaton: socialMedia
   footer:
     instances:
       claydemo:

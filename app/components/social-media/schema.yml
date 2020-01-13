@@ -1,0 +1,12 @@
+_description:
+  social media component button
+
+links:
+  _has:
+    input: text
+    type: url
+
+_groups:
+  settings:
+    fields:
+      - links
