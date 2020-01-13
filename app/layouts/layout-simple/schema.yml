@@ -23,6 +23,7 @@ top:
     include:
       - header
       - vulture-section
+      - magazine-section
 
 main:
   _placeholder:

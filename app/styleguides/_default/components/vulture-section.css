@@ -18,9 +18,16 @@
   padding-left: 10vh;
 }
 
-.vulture-section-buttons > button {
-  border: none;
-  height: fit-content;
+.vulture-section-buttons > a {
   align-self: center;
-  font-size: inherit;
+  padding-left: 1vh;
+  color: black;
+  font-size: 2vh;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 5px;
+  line-height: 1vh;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none;
 }

@@ -1,0 +1,20 @@
+_description:
+  component for the magazine sections
+
+links:
+  _has:
+    input: text
+    type: url
+
+imageUrl:
+  _label: URL
+  _has:
+    input: text
+    type: url
+    help: Must be an image URL
+
+_groups:
+  settings:
+    fields:
+      - links
+      - imageUrl

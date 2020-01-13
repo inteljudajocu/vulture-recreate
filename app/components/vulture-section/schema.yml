@@ -1,4 +1,7 @@
-link:
+_description:
+  Section top layout
+
+links:
   _has:
     input: text
     type: url
@@ -7,4 +10,4 @@ link:
 _groups:
   settings:
     fields:
-      - link
+      - links

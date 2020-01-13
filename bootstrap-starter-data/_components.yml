@@ -100,7 +100,11 @@ _components:
   vulture-section:
     instances:
       claydemo:
-        componentVariation: header
+        componentVariation: vultureSection
+  magazine-section:
+    instances:
+      claydemo:
+        componentVariation: magazineSection
   footer:
     instances:
       claydemo:
