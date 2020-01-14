@@ -38,6 +38,8 @@ bottom:
   _componentList:
     include:
       - footer
+      - vulture-section
+      - social-media
 
 kilnInternals:
   _componentList:

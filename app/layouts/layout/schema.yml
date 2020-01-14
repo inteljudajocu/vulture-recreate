@@ -44,6 +44,8 @@ bottom:
   _componentList:
     include:
       - footer
+      - vulture-section
+      - social-media
 foot:
   _componentList:
     invisible: true

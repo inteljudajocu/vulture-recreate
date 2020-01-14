@@ -1,6 +1,8 @@
 .vulture-section {
   display: flex;
   justify-content: center;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
 }
 
 .vulture-section-title {
@@ -30,4 +32,8 @@
   margin: 0;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.vulture-section-image {
+  width: 15vh;
 }
