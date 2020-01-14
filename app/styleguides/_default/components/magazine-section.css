@@ -2,7 +2,6 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  padding-bottom: 2vh;
 
   .magazine-section-item {
     padding-left: 1vh;
@@ -11,16 +10,16 @@
   .magazine-section-image {
     width: 10vh;
   }
-}
 
-.magazine-section-item > a {
-  color: black;
-  font-size: 1.3vh;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 5px;
-  line-height: 1vh;
-  margin: 0;
-  text-transform: uppercase;
-  text-decoration: none;
+  a {
+    color: black;
+    font-size: 1.3vh;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 1vh;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }

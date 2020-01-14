@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   padding-bottom: 2vh;
-  padding-top: 2vh;
 
   .vulture-section-title {
     padding-right: 15vh;
@@ -17,23 +16,23 @@
   .vulture-section-image {
     width: 15vh;
   }
-}
 
-.vulture-section-title > h2 {
-  font-weight: bold;
-  text-align: center;
-}
+  h2 {
+    font-weight: bold;
+    text-align: center;
+  }
 
-.vulture-section-buttons > a {
-  align-self: center;
-  padding-left: 1vh;
-  color: black;
-  font-size: 2vh;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 5px;
-  line-height: 1vh;
-  margin: 0;
-  text-transform: uppercase;
-  text-decoration: none;
+  a {
+    align-self: center;
+    padding-left: 1vh;
+    color: black;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 1vh;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
 }

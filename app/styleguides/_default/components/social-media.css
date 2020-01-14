@@ -1,8 +1,12 @@
 .social-media {
-  list-style: none;
   display: flex;
   justify-content: center;
+  list-style: none;
   padding-bottom: 2vh;
+
+  li {
+    padding-right: 2vh;
+  }
 
   .social-media-icon {
     color: black;
@@ -15,8 +19,4 @@
     text-transform: uppercase;
     text-decoration: none;
   }
-}
-
-.social-media > li {
-  padding-right: 2vh;
 }
