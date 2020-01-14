@@ -3,21 +3,25 @@
   justify-content: center;
   padding-bottom: 2vh;
   padding-top: 2vh;
-}
 
-.vulture-section-title {
-  padding-right: 15vh;
+  .vulture-section-title {
+    padding-right: 15vh;
+  }
+
+  .vulture-section-buttons {
+    display: flex;
+    flex-flow: nowrap;
+    padding-left: 10vh;
+  }
+
+  .vulture-section-image {
+    width: 15vh;
+  }
 }
 
 .vulture-section-title > h2 {
   font-weight: bold;
   text-align: center;
-}
-
-.vulture-section-buttons {
-  display: flex;
-  flex-flow: nowrap;
-  padding-left: 10vh;
 }
 
 .vulture-section-buttons > a {
@@ -32,8 +36,4 @@
   margin: 0;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-.vulture-section-image {
-  width: 15vh;
 }

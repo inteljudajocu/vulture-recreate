@@ -3,10 +3,14 @@
   display: flex;
   justify-content: center;
   padding-bottom: 2vh;
-}
 
-.magazine-section-item {
-  padding-left: 1vh;
+  .magazine-section-item {
+    padding-left: 1vh;
+  }
+
+  .magazine-section-image {
+    width: 10vh;
+  }
 }
 
 .magazine-section-item > a {
@@ -19,8 +23,4 @@
   margin: 0;
   text-transform: uppercase;
   text-decoration: none;
-}
-
-.magazine-section-image {
-  width: 10vh;
 }
