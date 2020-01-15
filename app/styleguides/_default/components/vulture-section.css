@@ -1,7 +1,6 @@
 .vulture-section {
   display: flex;
   justify-content: center;
-  padding-bottom: 2vh;
 
   .vulture-section-title {
     padding-right: 15vh;
@@ -20,6 +19,16 @@
   h2 {
     font-weight: bold;
     text-align: center;
+  }
+
+  ul {
+    display: flex;
+    height: fit-content;
+    list-style: none;
+  }
+
+  li:nth-child(n + 2) {
+    border-left: 1px solid black;
   }
 
   a {
