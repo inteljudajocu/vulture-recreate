@@ -1,20 +1,36 @@
 _description:
   Section top layout
 
-links:
+theCut:
   _has:
     input: text
     type: url
 
-imageUrl:
-  _label: URL
+style:
   _has:
     input: text
     type: url
-    help: Must be an image URL
+
+self:
+  _has:
+    input: text
+    type: url
+
+culture:
+  _has:
+    input: text
+    type: url
+
+power:
+  _has:
+    input: text
+    type: url
 
 _groups:
   settings:
     fields:
-      - links
-      - imageUrl
+      - theCut
+      - style
+      - self
+      - culture
+      - power
