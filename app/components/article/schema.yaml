@@ -102,6 +102,9 @@ _groups:
       text: Byline
       height: 30px
       ifEmpty: 'byline'
+  articleTypes:
+    fields:
+      - articleType
   lede:
     fields:
       - ledeUrl
@@ -117,6 +120,11 @@ canonicalUrl:
   _publish: url
   _has:
     help: Canonical URL of an article. Set when the article publishes.
+
+# articleType:
+#   _component:
+#     include:
+#       - articleType
 
 tags:
   _component:

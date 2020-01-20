@@ -34,6 +34,10 @@ main:
     page: true
     include:
       - article
+side:
+  _componentList:
+    include:
+      - most-viewed-stories
 primary:
   _componentList:
     include: []

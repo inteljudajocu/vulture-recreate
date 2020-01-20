@@ -4,44 +4,44 @@
 
   .vulture-section-title {
     padding-right: 15vh;
+
+    h2 {
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .vulture-section-image {
+      width: 15vh;
+    }
   }
 
   .vulture-section-buttons {
     display: flex;
     flex-flow: nowrap;
     padding-left: 10vh;
-  }
 
-  .vulture-section-image {
-    width: 15vh;
-  }
+    ul {
+      display: flex;
+      height: fit-content;
+      list-style: none;
 
-  h2 {
-    font-weight: bold;
-    text-align: center;
-  }
-
-  ul {
-    display: flex;
-    height: fit-content;
-    list-style: none;
+      a {
+        align-self: center;
+        padding-left: 1vh;
+        color: black;
+        font-size: 2vh;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 5px;
+        line-height: 1vh;
+        margin: 0;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
   }
 
   li:nth-child(n + 2) {
     border-left: 1px solid black;
-  }
-
-  a {
-    align-self: center;
-    padding-left: 1vh;
-    color: black;
-    font-size: 2vh;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 5px;
-    line-height: 1vh;
-    margin: 0;
-    text-transform: uppercase;
-    text-decoration: none;
   }
 }

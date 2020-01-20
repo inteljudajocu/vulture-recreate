@@ -50,6 +50,11 @@ body {
   outline: dotted 1px;
 }
 
+.layout-simple > .article-column {
+  display: flex;
+  flex-flow: nowrap;
+}
+
 .layout-simple .kiln-field button:focus,
 .layout-simple .kiln-field input:focus,
 .layout-simple .kiln-field select:focus,

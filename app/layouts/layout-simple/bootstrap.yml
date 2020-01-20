@@ -5,6 +5,7 @@ _layouts:
     top: top
     header: header
     main: main
+    side: side
     bottom: []
     kilnInternals:
       -

@@ -1,0 +1,10 @@
+<di data-uri="{{ default _ref _self }}" data-editable="settings">
+    <div class="most-viewed">
+        <h1>Most viewed stories</h1>
+        {{#each stories as |story|}}
+        <ul>
+            {{#if story}}<li><a href="{{ story.url }}"><span>{{ story.title }}</span></a></li>{{/if}}
+        </ul>
+        {{/each}}
+    </div>
+</di>

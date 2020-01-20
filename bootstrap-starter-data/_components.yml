@@ -97,6 +97,11 @@ _components:
         componentVariation: header
         mobileCTA: Support Us
         mobileCTALink: 'https://www.google.com'
+  most-viewed-stories:
+    instances:
+      claydemo:
+        componentVariation: mostViewedStories
+        stories: []
   vulture-section:
     instances:
       claydemo:
@@ -138,6 +143,10 @@ _components:
     instances:
       new:
         title: ''
+  articleType:
+    instances:
+      new:
+        datePublished: []
   list:
     instances:
       new:

@@ -14,6 +14,9 @@ _layouts:
           -
             _ref: /_components/vulture-section/instances/claydemo
         main: main
+        side:
+          -
+            _ref: /_components/most-viewed-stories/instances/claydemo
         bottom:
           -
             _ref: /_components/vulture-section/instances/claydemo
@@ -37,6 +40,9 @@ _layouts:
           -
             _ref: /_components/vulture-section/instances/claydemo
         main: main
+        side:
+          -
+            _ref: /_components/most-viewed-stories/instances/claydemo
         bottom:
           -
             _ref: /_components/vulture-section/instances/claydemo
