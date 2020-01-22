@@ -102,6 +102,12 @@ _components:
       claydemo:
         componentVariation: mostViewedStories
         stories: []
+  advertisement:
+    instances:
+      claydemo:
+        componentVariation: advertisement
+        imageUrl: ''
+        imageSrc: ''
   vulture-section:
     instances:
       claydemo:

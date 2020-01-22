@@ -37,6 +37,7 @@ main:
 side:
   _componentList:
     include:
+      - advertisement
       - most-viewed-stories
 
 bottom:

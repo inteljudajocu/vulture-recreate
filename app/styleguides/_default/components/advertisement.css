@@ -1,0 +1,8 @@
+.adImage {
+  img {
+    max-width: 25vh;
+    max-height: 25vh;
+    min-width: 24vh;
+    min-height: 24vh;
+  }
+}
