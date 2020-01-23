@@ -1,12 +1,12 @@
 .most-viewed-stories {
-  height: 100vh;
+  height: 25%;
 
   .most-viewed {
     border-top: 1px solid black;
     width: 25vh;
     position: sticky;
-    top: 1vh;
-    min-height: 1vh;
+    top: 2vh;
+    height: 12.5%;
 
     h1 {
       text-align: center;
