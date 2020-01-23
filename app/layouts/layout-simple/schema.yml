@@ -39,7 +39,8 @@ side:
     include:
       - advertisement
       - most-viewed-stories
-
+      - advertisement
+      - best-the-cut
 bottom:
   _componentList:
     include:

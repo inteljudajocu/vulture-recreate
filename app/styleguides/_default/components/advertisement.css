@@ -1,8 +1,16 @@
-.adImage {
-  img {
-    max-width: 25vh;
-    max-height: 25vh;
-    min-width: 24vh;
-    min-height: 24vh;
+.advertisement-space {
+  height: 100vh;
+
+  .advertisement {
+    position: sticky;
+    height: 25vh;
+    top: 1vh;
+
+    img {
+      max-width: 25vh;
+      max-height: 25vh;
+      min-width: 24vh;
+      min-height: 24vh;
+    }
   }
 }

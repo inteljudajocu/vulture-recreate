@@ -108,6 +108,11 @@ _components:
         componentVariation: advertisement
         imageUrl: ''
         imageSrc: ''
+  best-the-cut:
+    instances:
+      claydemo:
+        componentVariation: bestTheCut
+        stories: []
   vulture-section:
     instances:
       claydemo:

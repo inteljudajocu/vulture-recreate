@@ -19,6 +19,10 @@ _layouts:
             _ref: /_components/advertisement/instances/claydemo
           -
             _ref: /_components/most-viewed-stories/instances/claydemo
+          -
+            _ref: /_components/advertisement/instances/claydemo
+          -
+            _ref: /_components/best-the-cut/instances/claydemo
         bottom:
           -
             _ref: /_components/vulture-section/instances/claydemo
@@ -47,6 +51,10 @@ _layouts:
             _ref: /_components/advertisement/instances/claydemo
           -
             _ref: /_components/most-viewed-stories/instances/claydemo
+          -
+            _ref: /_components/advertisement/instances/claydemo
+          -
+            _ref: /_components/best-the-cut/instances/claydemo
         bottom:
           -
             _ref: /_components/vulture-section/instances/claydemo

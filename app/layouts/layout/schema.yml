@@ -39,6 +39,8 @@ side:
     include:
       - advertisement
       - most-viewed-stories
+      - advertisement
+      - best-the-cut
 primary:
   _componentList:
     include: []
