@@ -104,8 +104,11 @@ _components:
         stories: []
   advertisement:
     instances:
-      claydemo:
+      top-side:
         componentVariation: advertisement
+        imageUrl: ''
+        imageSrc: ''
+      bottom-side:
         imageUrl: ''
         imageSrc: ''
   best-the-cut:

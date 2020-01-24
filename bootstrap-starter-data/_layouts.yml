@@ -16,11 +16,11 @@ _layouts:
         main: main
         side:
           -
-            _ref: /_components/advertisement/instances/claydemo
+            _ref: /_components/advertisement/instances/top-side
           -
             _ref: /_components/most-viewed-stories/instances/claydemo
           -
-            _ref: /_components/advertisement/instances/claydemo
+            _ref: /_components/advertisement/instances/bottom-side
           -
             _ref: /_components/best-the-cut/instances/claydemo
         bottom:
