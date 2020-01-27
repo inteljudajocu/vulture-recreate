@@ -20,9 +20,14 @@
     <div class="top" data-track-zone="top">
       <div data-editable="top">{{> component-list top}}</div>
     </div>
-    <main class="main" data-editable="main" data-track-zone="main">
-      {{> component-list main}}
-    </main>
+    <div class="article-column">
+      <main class="main" data-editable="main" data-track-zone="main">
+        {{> component-list main}}
+      </main>
+      <side class="side" data-editable="side" data-track-zone="side">
+        {{>component-list side}}
+      </side>
+    </div>
     <footer class="footer" data-editable="bottom" data-track-zone="bottom">
       {{> component-list bottom}}
     </footer>

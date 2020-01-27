@@ -1,0 +1,21 @@
+_description:
+  Article type and date
+
+datePublished:
+  _publish: dateArtPublished
+  _has:
+    input: datepicker
+    validate.required: true
+
+keyTag:
+  _label: Key tag
+  _publish: pageKeyTag
+  _has:
+    input: simple-list
+    help: An array of key tag
+
+_groups:
+  settings:
+    fields:
+      - keyTag
+      - datePublished

@@ -1,0 +1,18 @@
+_description:
+  Advertisment component image
+
+imageUrl:
+  _has:
+    input: text
+    type: url
+
+imageSrc:
+  _has:
+    input: text
+    type: url
+
+_groups:
+  settings:
+    fields:
+      - imageUrl
+      - imageSrc

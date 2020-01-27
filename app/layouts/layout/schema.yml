@@ -12,6 +12,7 @@ head:
       - meta-keywords
       - meta-authors
       - meta-image
+      - paragraph
 
 headLayout:
   _componentList:
@@ -33,6 +34,13 @@ main:
     page: true
     include:
       - article
+side:
+  _componentList:
+    include:
+      - advertisement
+      - most-viewed-stories
+      - advertisement
+      - best-the-cut
 primary:
   _componentList:
     include: []
@@ -43,6 +51,8 @@ bottom:
   _componentList:
     include:
       - footer
+      - vulture-section
+      - social-media
 foot:
   _componentList:
     invisible: true

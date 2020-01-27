@@ -1,0 +1,15 @@
+.advertisement {
+  height: 25%;
+
+  .advertisement-space {
+    position: sticky;
+    height: 12.5%;
+    top: 1vh;
+    text-aling: center;
+
+    .sideImage {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

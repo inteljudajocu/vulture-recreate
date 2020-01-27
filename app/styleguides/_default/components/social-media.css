@@ -1,0 +1,22 @@
+.social-media {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-bottom: 2vh;
+
+  li {
+    padding-right: 2vh;
+  }
+
+  .social-media-icon {
+    color: black;
+    font-size: 3vh;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 5px;
+    line-height: 1vh;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

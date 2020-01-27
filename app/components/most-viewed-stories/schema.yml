@@ -1,0 +1,25 @@
+_description:
+  most view stories articles
+
+stories:
+  _has:
+    input: complex-list
+    validate:
+      - min: 1
+      - max: 5
+      - required: true
+    props:
+      -
+        prop: title
+        _has:
+          input: text
+      -
+        prop: url
+        _has:
+          input: text
+          type: url
+
+_groups:
+  settings:
+    fields:
+      - stories

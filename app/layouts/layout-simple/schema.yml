@@ -22,6 +22,8 @@ top:
   _componentList:
     include:
       - header
+      - vulture-section
+      - magazine-section
 
 main:
   _placeholder:
@@ -32,10 +34,19 @@ main:
     fuzzy: true
     include: []
 
+side:
+  _componentList:
+    include:
+      - advertisement
+      - most-viewed-stories
+      - advertisement
+      - best-the-cut
 bottom:
   _componentList:
     include:
       - footer
+      - vulture-section
+      - social-media
 
 kilnInternals:
   _componentList:

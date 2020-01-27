@@ -1,0 +1,36 @@
+_description:
+  Section top layout
+
+theCut:
+  _has:
+    input: text
+    type: url
+
+style:
+  _has:
+    input: text
+    type: url
+
+self:
+  _has:
+    input: text
+    type: url
+
+culture:
+  _has:
+    input: text
+    type: url
+
+power:
+  _has:
+    input: text
+    type: url
+
+_groups:
+  settings:
+    fields:
+      - theCut
+      - style
+      - self
+      - culture
+      - power

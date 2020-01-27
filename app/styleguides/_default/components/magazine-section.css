@@ -1,0 +1,30 @@
+.magazine-section {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  list-style: none;
+
+  .magazine-section-item {
+    padding-left: 1vh;
+
+    .magazine-section-image {
+      width: 10vh;
+    }
+
+    a {
+      color: black;
+      font-size: 1.3vh;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 5px;
+      line-height: 1vh;
+      margin: 0;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+
+  li:nth-child(n + 2):not(:nth-child(6)):not(:nth-child(5)) {
+    border-left: 1px solid black;
+  }
+}

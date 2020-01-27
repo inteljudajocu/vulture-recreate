@@ -1,0 +1,36 @@
+_description:
+  social media component button
+
+facebook:
+  _has:
+    input: text
+    type: url
+
+twitter:
+  _has:
+    input: text
+    type: url
+
+instagram:
+  _has:
+    input: text
+    type: url
+
+pinterest:
+  _has:
+    input: text
+    type: url
+
+share:
+  _has:
+    input: text
+    type: url
+
+_groups:
+  settings:
+    fields:
+      - facebook
+      - twitter
+      - instagram
+      - pinterest
+      - share

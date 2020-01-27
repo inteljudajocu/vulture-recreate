@@ -1,0 +1,48 @@
+_description:
+  component for the magazine sections
+
+intelligencer:
+  _has:
+    input: text
+    type: url
+
+theCut:
+  _has:
+    input: text
+    type: url
+
+vulture:
+  _has:
+    input: text
+    type: url
+
+grubStreet:
+  _has:
+    input: text
+    type: url
+
+newYork:
+  _has:
+    input: text
+    type: url
+
+theStrategist:
+  _has:
+    input: text
+    type: url
+
+theMagazine:
+  _has:
+    input: text
+    type: url
+
+_groups:
+  settings:
+    fields:
+      - intelligencer
+      - theCut
+      - vulture
+      - grubStreet
+      - newYork
+      - theStrategist
+      - theMagazine

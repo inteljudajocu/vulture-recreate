@@ -1,0 +1,35 @@
+.most-viewed-stories {
+  height: 25%;
+
+  .most-viewed {
+    border-top: 1px solid black;
+    width: 25vh;
+    position: sticky;
+    top: 2vh;
+
+    height: 12.5%;
+
+    h1 {
+      text-align: center;
+      margin-top: 5%;
+      font: 700 12px/1 Chap, Helvetica, sans-serif;
+    }
+
+    ul {
+      list-style: decimal;
+
+      li {
+        align-items: baseline;
+        padding: 20px 0 16px;
+        border-bottom: 1px solid #e7e7e7;
+
+        a {
+          text-transform: uppercase;
+          font: 300 21px/25px Canela, Georgia, serif;
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
