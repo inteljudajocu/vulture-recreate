@@ -118,8 +118,19 @@ _components:
         stories: []
   vulture-section:
     instances:
-      claydemo:
+      header:
         componentVariation: vultureSection
+        theCut: ''
+        style: ''
+        self: ''
+        culture: ''
+        power: ''
+      footer:
+        theCut: ''
+        style: ''
+        self: ''
+        culture: ''
+        power: ''
   magazine-section:
     instances:
       claydemo:

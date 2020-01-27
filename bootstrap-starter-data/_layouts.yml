@@ -12,7 +12,7 @@ _layouts:
           -
             _ref: /_components/magazine-section/instances/claydemo
           -
-            _ref: /_components/vulture-section/instances/claydemo
+            _ref: /_components/vulture-section/instances/header
         main: main
         side:
           -
@@ -25,7 +25,7 @@ _layouts:
             _ref: /_components/best-the-cut/instances/claydemo
         bottom:
           -
-            _ref: /_components/vulture-section/instances/claydemo
+            _ref: /_components/vulture-section/instances/footer
           -
             _ref: /_components/social-media/instances/claydemo
         kilnInternals:
@@ -44,20 +44,20 @@ _layouts:
           -
             _ref: /_components/magazine-section/instances/claydemo
           -
-            _ref: /_components/vulture-section/instances/claydemo
+            _ref: /_components/vulture-section/instances/header
         main: main
         side:
           -
-            _ref: /_components/advertisement/instances/claydemo
+            _ref: /_components/advertisement/instances/top-side
           -
             _ref: /_components/most-viewed-stories/instances/claydemo
           -
-            _ref: /_components/advertisement/instances/claydemo
+            _ref: /_components/advertisement/instances/bottom-side
           -
             _ref: /_components/best-the-cut/instances/claydemo
         bottom:
           -
-            _ref: /_components/vulture-section/instances/claydemo
+            _ref: /_components/vulture-section/instances/footer
           -
             _ref: /_components/social-media/instances/claydemo
         kilnInternals:
