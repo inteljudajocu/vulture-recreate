@@ -9,7 +9,7 @@ datePublished:
 
 keyTag:
   _label: Key tag
-  _publish: pageKeyTag
+  _subscribe: keywords
   _has:
     input: simple-list
     help: An array of key tag
