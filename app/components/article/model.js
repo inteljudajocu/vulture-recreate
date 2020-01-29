@@ -6,7 +6,8 @@ const _get = require('lodash/get'),
   dateParse = require('date-fns/parse'),
   utils = require('../../services/universal/utils'),
   has = utils.has, // convenience
-  sanitize = require('../../services/universal/sanitize');
+  sanitize = require('../../services/universal/sanitize'),
+  clay = require('clayutils');
 
 /**
  * only allow emphasis, italic, and strikethroughs in headlines
@@ -79,6 +80,5 @@ module.exports.save = function(uri, data, locals) {
   formatDate(data, locals);
   setCanonicalUrl(data, locals);
   generateFeedImage(data);
-
   return data;
 };

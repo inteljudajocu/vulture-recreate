@@ -2,7 +2,7 @@ _description:
   Article type and date
 
 datePublished:
-  _publish: dateArtPublished
+  _subscribed: publishTime
   _has:
     input: datepicker
     validate.required: true
@@ -13,6 +13,7 @@ keyTag:
   _has:
     input: simple-list
     help: An array of key tag
+
 
 _groups:
   settings:

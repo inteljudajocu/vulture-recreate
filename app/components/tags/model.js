@@ -45,6 +45,5 @@ module.exports.save = function(uri, data) {
   data.normalizedTags = normalizeTags(items);
   items = setInvisible(items); // then figure out which tags should be invisible
   data.items = items;
-
   return data;
 };

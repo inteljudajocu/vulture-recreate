@@ -3,6 +3,7 @@ _components:
     authors: []
     byline: []
     dateUpdated: false
+    articleTypeHeader: []
     content: []
     tags:
       _ref: /_components/tags
