@@ -36,6 +36,7 @@ date:
     help: Date that is generated from the articleDate and articleTime fields
 articleDate:
   _label: First Published Date
+  _publish: publishTime
   _has:
     input: datepicker
     help: Custom published date, if it should be different than the actual date the article was first published
@@ -49,6 +50,12 @@ dateUpdated:
   _has:
     input: checkbox
     help: Display "Updated On" in the article with the latest published date
+
+articleTypeHeader:
+  _label: Date publish and primary tags
+  _componentlist:
+    include:
+      - articleTypeTag
 
 content:
   _label: Article Content
@@ -102,9 +109,6 @@ _groups:
       text: Byline
       height: 30px
       ifEmpty: 'byline'
-  articleTypes:
-    fields:
-      - articleType
   lede:
     fields:
       - ledeUrl
@@ -121,14 +125,10 @@ canonicalUrl:
   _has:
     help: Canonical URL of an article. Set when the article publishes.
 
-# articleType:
-#   _component:
-#     include:
-#       - articleType
-
 tags:
   _component:
     include:
       - tags
 normalizedTags:
   _subscribe: normalizedTags
+  

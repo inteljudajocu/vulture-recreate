@@ -1,4 +1,7 @@
 <article data-uri="{{ default _ref _self }}" class="{{ componentVariation }}{{ if @root.locals.edit ' editing' }}" role="main">
+  <header>
+    {{> component-list articleTypeHeader }}
+  </header>
   <header class="article-header">
     {{!-- {{> articleType articleType }} --}}
     <div class="lede-wrapper">

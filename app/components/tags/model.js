@@ -5,7 +5,8 @@ const _map = require('lodash/map'),
   _includes = require('lodash/includes'),
   { removeNonAlphanumericCharacters } = require('../../services/universal/sanitize'),
   // invisible tags will be rendered to the page but never visible outside of edit mode
-  invisibleTags = [];
+  invisibleTags = [],
+  primaryTags = [];
 
 /**
  * Removes all non alphanumeric characters from the tags
@@ -38,13 +39,25 @@ function setInvisible(items) {
   });
 }
 
+function setPrimary(items) {
+  return _map(items || [], function(item) {
+    return _set(item, 'primary', _includes(primaryTags, item.text));
+  });
+}
+
+function madePrimary(items) {
+  if (items[0] != undefined) items[0].primary = true;
+  return items;
+}
+
 module.exports.save = function(uri, data) {
   let { items } = data;
 
   items = clean(items); // first, make sure everything is lowercase and has trimmed whitespace
   data.normalizedTags = normalizeTags(items);
   items = setInvisible(items); // then figure out which tags should be invisible
+  items = setPrimary(items);
+  items = madePrimary(items);
   data.items = items;
-
   return data;
 };

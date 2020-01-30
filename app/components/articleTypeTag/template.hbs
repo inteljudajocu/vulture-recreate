@@ -1,0 +1,8 @@
+<div data-uri="{{ default _ref _self }}" class="articleTypeTag" data-editable="settings">
+    <ul class="articleTypeTag-list">
+        {{#each keyTag as |tag|}}
+        <li><a>{{tag.text}}</a></li>
+        {{/each}}
+    </ul>
+    <span>{{ datePublished }}</span>
+</div>

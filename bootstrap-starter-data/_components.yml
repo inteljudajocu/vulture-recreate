@@ -168,10 +168,10 @@ _components:
     instances:
       new:
         title: ''
-  articleType:
+  articleTypeTag:
     instances:
       new:
-        datePublished: []
+        keyTag: []
   list:
     instances:
       new:
@@ -193,6 +193,9 @@ _components:
   article:
     instances:
       new-standard:
+        articleTypeHeader:
+          - 
+            _ref: /_components/articleTypeTag/instances/new
         headline: ''
         feedImgUrl: ''
         ledeUrl: ''
@@ -208,6 +211,9 @@ _components:
         tags:
           _ref: /_components/tags/instances/new
       sample:
+        articleTypeHeader:
+          - 
+            _ref: /_components/articleTypeTag/instances/new
         headline: 'Clay Starter Article'
         feedImgUrl: 'https://s.abcnews.com/images/Lifestyle/puppy-ht-3-er-170907_4x3_992.jpg'
         ledeUrl: 'https://s.abcnews.com/images/Lifestyle/puppy-ht-3-er-170907_4x3_992.jpg'
