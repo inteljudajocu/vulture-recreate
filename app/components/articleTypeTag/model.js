@@ -1,9 +1,15 @@
 'use strict';
 
-function getData(data, locals) {
-  if (data.keyTag.lenght != 0) {
-    data.keyTag = data.keyTag.splice(0, 1);
-  }
+const primaryTags = [];
+
+function getData(data) {
+  data.keyTag.forEach(element => {
+    if (element.primary) primaryTags.push(element);
+    console.log('tags primarios');
+    console.log(primaryTags);
+  });
+  data.keyTag = primaryTags;
+
   return data;
 }
 

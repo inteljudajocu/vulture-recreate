@@ -1,23 +1,27 @@
-.articleTypeTag-div {
+.articleTypeTag {
   display: flex;
+  border-top: 3px solid black;
 
-  ul {
+  .articleTypeTag-list {
     display: flex;
     margin-top: 0;
     margin-right: 1vh;
     list-style: none;
     padding-left: 0;
-    border-right: 1px solid black;
+    margin-top: 1.5vh;
+    border-right: 1px solid #d0021b;
 
     a {
       align-self: center;
       color: black;
       font-weight: bold;
       text-transform: uppercase;
+      padding-right: 1vh;
     }
   }
 
   span {
     padding-left: 1vh;
+    padding-top: 1.5vh;
   }
 }
