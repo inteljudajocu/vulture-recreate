@@ -2,15 +2,26 @@
 
 const h = require('highland'),
   { subscribe, helpers } = require('amphora-search'),
-  { getIndexFromFilename, createFilter, getMainComponentRef, put, urlToUri } = require('../utils'),
+  {
+    put,
+    del,
+    urlToUri,
+    uriToPublished,
+    createFilter,
+    getIndexFromFilename,
+    getMainComponentRef,
+    getComponentByName
+  } = require('../utils'),
   index = helpers.indexWithPrefix(getIndexFromFilename(__filename)),
   filter = createFilter({
-    components: ['article', 'tags', 'articleTypeTag'],
+    components: ['article', 'tags'],
     includePage: true
   }),
   log = require('../../services/universal/log').setup({ file: __filename });
 
 subscribe('save').through(handleSave);
+
+subscribe('unpublishPage').through(handleUnpublish);
 
 function handleSave(stream) {
   return stream
@@ -21,14 +32,6 @@ function handleSave(stream) {
     .each(logSuccess);
 }
 
-function logErrors(errors) {
-  log('errors', errors);
-}
-
-function logSuccess(res) {
-  log('info', res);
-}
-
 function handleStreams(stream) {
   return stream
     .filter(filter)
@@ -37,13 +40,11 @@ function handleStreams(stream) {
     .map(parseComponent);
 }
 
-function putToElastic(obj) {
-  return put(index, urlToUri(obj.ref), obj.source);
-}
-
 function parseComponent(ops) {
   const mainComponent = getMainComponentRef(ops),
-    { headline, date, canonicalUrl, tags } = mainComponent.value;
+    tags = getComponentByName(ops, 'tags'),
+    { items } = tags.value,
+    { headline, date, canonicalUrl } = mainComponent.value;
 
   return {
     key: mainComponent.key,
@@ -51,7 +52,31 @@ function parseComponent(ops) {
       url: canonicalUrl,
       date: date,
       title: headline,
-      tags: tags
+      items
     }
   };
+}
+
+function putToElastic(obj) {
+  return put(index, urlToUri(obj.ref), obj.source);
+}
+
+function handleUnpublish(stream) {
+  return stream
+    .tap(console.log)
+    .map(handleStreamUnpublish)
+    .errors(logErrors)
+    .each(logSuccess);
+}
+
+function handleStreamUnpublish(op) {
+  return del(index, uriToPublished(op.uri));
+}
+
+function logErrors(errors) {
+  log('errors', errors);
+}
+
+function logSuccess(res) {
+  log('info', res);
 }

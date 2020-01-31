@@ -6,7 +6,13 @@ const _map = require('lodash/map'),
   { removeNonAlphanumericCharacters } = require('../../services/universal/sanitize'),
   // invisible tags will be rendered to the page but never visible outside of edit mode
   invisibleTags = [],
-  primaryTags = [];
+  primaryTags = [],
+  { search } = require('../../services/server/elastic'),
+  query = {
+    query: { match_all: {} }
+  };
+
+let tags = [];
 
 /**
  * Removes all non alphanumeric characters from the tags
@@ -49,6 +55,22 @@ function madePrimary(items) {
   if (items[0] != undefined) items[0].primary = true;
   return items;
 }
+
+function getTagsElastic(uri, data) {
+  return search('local_tags', query)
+    .then(({ hits }) => hits.hits)
+    .then(hits => hits.map(({ _source }) => _source))
+    .then(res => {
+      data = res;
+      console.log(data);
+      return data;
+    });
+}
+
+module.exports.render = function(uri, data) {
+  tags = getTagsElastic(data);
+  return data;
+};
 
 module.exports.save = function(uri, data) {
   let { items } = data;
