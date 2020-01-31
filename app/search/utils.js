@@ -15,7 +15,7 @@ function createFilter({ components, includePage }) {
 
 function getMainComponentRef(ops) {
   const page = getPage(ops),
-    mainComponent = getComponentByName(ops, 'recipe');
+    mainComponent = getComponentByName(ops, 'article');
 
   mainComponent.key = page.key;
 
@@ -28,6 +28,10 @@ function getPage(ops) {
 
 function getComponentByName(ops, componentName) {
   return ops.find(op => getComponentName(op.key) === componentName);
+}
+
+function getComponentRef(ops, key) {
+  return ops.find(op => op.key === key);
 }
 
 function getComponentContent(content, componentName) {
@@ -90,3 +94,4 @@ module.exports.getComponentContent = getComponentContent;
 module.exports.getMainComponentRef = getMainComponentRef;
 module.exports.createFilter = createFilter;
 module.exports.uriToPublished = uriToPublished;
+module.exports.getComponentRef = getComponentRef;
