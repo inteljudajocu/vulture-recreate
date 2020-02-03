@@ -56,7 +56,7 @@ function madePrimary(items) {
   return items;
 }
 
-function getTagsElastic(elasticTags) {
+function getTagsElastic(data) {
   return search('local_tags', query)
     .then(({ hits }) => hits.hits)
     .then(hits => hits.map(({ _source }) => _source))
@@ -64,27 +64,15 @@ function getTagsElastic(elasticTags) {
       return res.map(item => {
         return elasticTags.concat(item.items);
       });
-      // res.forEach(element => {
-      //   items = items.concat(element.items);
-      // });
-      // return items;
     })
     .then(result => {
-      return result.flat(1);
+      data.items = result.flat(1);
+      return data;
     });
 }
 
 module.exports.render = function(uri, data) {
-  let { items } = data;
-
-  getTagsElastic(elasticTags).then(result => {
-    console.log('these are items', result);
-
-    return (data.items = result);
-  });
-  // console.log(items);
-  // data.items = items;
-  return data;
+  return getTagsElastic(data).then(data => data);
 };
 
 module.exports.save = function(uri, data) {
