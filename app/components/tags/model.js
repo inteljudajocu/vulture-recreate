@@ -12,7 +12,7 @@ const _map = require('lodash/map'),
     query: { match_all: {} }
   };
 
-let tags = [];
+let elasticTags = [];
 
 /**
  * Removes all non alphanumeric characters from the tags
@@ -56,19 +56,34 @@ function madePrimary(items) {
   return items;
 }
 
-function getTagsElastic(uri, data) {
+function getTagsElastic(elasticTags) {
   return search('local_tags', query)
     .then(({ hits }) => hits.hits)
     .then(hits => hits.map(({ _source }) => _source))
     .then(res => {
-      data = res;
-      console.log(data);
-      return data;
+      return res.map(item => {
+        return elasticTags.concat(item.items);
+      });
+      // res.forEach(element => {
+      //   items = items.concat(element.items);
+      // });
+      // return items;
+    })
+    .then(result => {
+      return result.flat(1);
     });
 }
 
 module.exports.render = function(uri, data) {
-  tags = getTagsElastic(data);
+  let { items } = data;
+
+  getTagsElastic(elasticTags).then(result => {
+    console.log('these are items', result);
+
+    return (data.items = result);
+  });
+  // console.log(items);
+  // data.items = items;
   return data;
 };
 
