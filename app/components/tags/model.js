@@ -9,7 +9,8 @@ const _map = require('lodash/map'),
   primaryTags = [],
   { search } = require('../../services/server/elastic'),
   query = {
-    query: { match_all: {} }
+    _source: ['items'],
+    query: { match: { 'items.text': 'will' } }
   };
 
 let elasticTags = [];
@@ -66,6 +67,8 @@ function getTagsElastic(data) {
       });
     })
     .then(result => {
+      console.log(result);
+
       data.items = result.flat(1);
       return data;
     });
