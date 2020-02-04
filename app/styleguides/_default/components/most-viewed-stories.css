@@ -1,5 +1,6 @@
 .most-viewed-stories {
   height: 25%;
+  padding-top: 5vh;
 
   .most-viewed {
     border-top: 1px solid black;

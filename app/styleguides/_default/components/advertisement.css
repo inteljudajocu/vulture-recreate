@@ -1,5 +1,6 @@
 .advertisement {
   height: 25%;
+  padding-top: 5vh;
 
   .advertisement-space {
     position: sticky;

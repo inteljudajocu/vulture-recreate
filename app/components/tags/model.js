@@ -13,7 +13,7 @@ const _map = require('lodash/map'),
     query: {
       bool: {
         must: {
-          term: { 'items.primary': 'true' }
+          term: { 'items.text': 'son' }
         }
       }
     }
